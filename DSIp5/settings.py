@@ -12,7 +12,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '/home/iradiel/DSI/Desarrollo/DSIp5/sqlite3.db',                      # Or path to database file if using sqlite3.
+        'NAME': '/home/iradiel/DSI/Desarrollo/DSIp6Django/sqlite3.db',                      # Or path to database file if using sqlite3.
         'USER': '',                      # Not used with sqlite3.
         'PASSWORD': '',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
@@ -60,13 +60,14 @@ STATIC_ROOT = ''
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
-STATIC_URL = '/static/'
+STATIC_URL = '/home/iradiel/DSI/Desarrollo/DSIp6Django/css/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    '/home/iradiel/DSI/Desarrollo/DSIp6Django/css',
 )
 
 # List of finder classes that know how to find static files in
@@ -104,7 +105,7 @@ ROOT_URLCONF = 'DSIp5.urls'
 WSGI_APPLICATION = 'DSIp5.wsgi.application'
 
 TEMPLATE_DIRS = (
-    '/home/iradiel/DSI/Desarrollo/DSIp5/templates/'
+    '/home/iradiel/DSI/Desarrollo/DSIp6Django/templates/'
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
